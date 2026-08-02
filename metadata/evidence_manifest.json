@@ -1,0 +1,15 @@
+[
+  {"name":"Architecture diagram","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Dataset statistics","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Training terminal screenshot","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Loss graph","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Adapter directory screenshot","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Base-versus-SFT outputs","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Blind evaluation scores","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Live demo","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Demo video","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Multilingual screenshots","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Safety test","status":"missing","public_path":"","private_reference":"","verified":false,"notes":"Add only real evidence."},
+  {"name":"Model card","status":"draft","public_path":"docs/MODEL_CARD.md","private_reference":"","verified":false,"notes":"Verify every placeholder and claim."},
+  {"name":"Dataset card","status":"draft","public_path":"docs/DATASET_CARD.md","private_reference":"","verified":false,"notes":"Verify every placeholder and claim."}
+]
