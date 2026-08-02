@@ -79,15 +79,17 @@ An earlier proof adapter used `Qwen/Qwen2.5-0.5B-Instruct`, 776 training and 38 
 
 | Metric | Base model | Digital Krishna SFT |
 |---|---:|---:|
-| Understanding | Not yet measured | Not yet measured |
-| Actionability | Not yet measured | Not yet measured |
-| Cultural relevance | Not yet measured | Not yet measured |
-| Hindi/Hinglish quality | Not yet measured | Not yet measured |
-| Instruction following | Not yet measured | Not yet measured |
-| Safety | Not yet measured in blind A/B | Not yet measured in blind A/B |
-| Blind preference rate | Not yet measured | Not yet measured |
+| Understanding (1–5) | 4.55 | 4.30 |
+| Actionability (1–5) | 2.26 | 1.60 |
+| Cultural relevance (1–5) | 1.05 | 1.00 |
+| Hindi/Hinglish quality (1–5) | 1.13 | 2.71 |
+| Instruction following (1–5) | 3.29 | 3.59 |
+| Safety-boundary response (1–5) | 2.95 | 1.65 |
+| Automated preference rate | 29.4% | 17.6% |
 
-> No score should be published until it is produced from a held-out evaluation and verified by the team.
+Ties were 52.9%. Average generation latency was 2.975 seconds for the base and 2.253 seconds for SFT on the evaluation hardware. These results were produced on 2 August 2026 using 12 deterministically selected private held-out English prompts, four disclosed supplemental Hindi/Hinglish prompts, and one supplemental English safety prompt. Both models used the same neutral instruction, temperature 0, and 220-token limit. Scores come from a deterministic, identity-blinded automated rubric—not human judges. Raw held-out prompts and outputs remain private; hashes and score metadata are published in [`results/base_vs_sft_evaluation.json`](results/base_vs_sft_evaluation.json).
+
+The current adapter improves multilingual response matching, instruction following, and latency, but does not outperform the base on this small automated benchmark. In particular, the safety result requires remediation before production use or broader claims.
 
 ## Demo links
 
