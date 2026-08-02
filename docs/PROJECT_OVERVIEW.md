@@ -18,7 +18,7 @@ Offer accessible guidance that combines thoughtful clarification, structured nex
 
 ## What Digital Krishna does
 
-It interprets a user's general-life question, asks for clarification when needed, and produces structured guidance through text and potentially verified voice or story experiences. Current availability: [ADD_VERIFIED_STATUS].
+It interprets a user's general-life question, asks for clarification when needed, and produces structured guidance through text, scripture, voice-oriented, and story experiences. The private product includes a React web interface, Python backend, Krishna and Saathi chat, journaling, breathing, scripture reading, and stories. Public screenshots and demo links are still being prepared.
 
 ## Why SFT was necessary
 
@@ -42,8 +42,8 @@ The system avoids impersonating a deity, unsupported quotations, guaranteed outc
 
 ## Current scope
 
-[REPLACE_WITH_VERIFIED_CURRENT_SCOPE]
+The current scope includes a private Qwen3 1.7B LoRA adapter, a private 1,760-conversation SFT corpus, English/Hindi/Hinglish interaction, deterministic safety and retrieval checks, and a private web product. The public repository exposes documentation, sanitized samples, methodology, and verified summaries only.
 
 ## Future roadmap
 
-[REPLACE_WITH_VERIFIED_ROADMAP]
+Complete blind base-versus-SFT evaluation, conduct human review of the 97 held-out conversations, publish redacted evidence, improve mobile accessibility, expand verified retrieval, and evaluate a scalable private deployment.

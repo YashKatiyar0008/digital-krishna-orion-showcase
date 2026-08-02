@@ -6,4 +6,4 @@ Authorized hackathon judges may request a private technical walkthrough, adapter
 
 Temporary access, if approved, will be least-privilege, time-limited, read-only, and limited to specific reviewed material. Production source, complete datasets, adapter weights, private prompts, retrieval corpora, database internals, deployment details, and security controls remain unavailable unless the team separately authorizes a safe disclosure.
 
-Contact: [ADD_JUDGE_CONTACT_METHOD]
+Contact the repository owner, `YashKatiyar0008`, through the hackathon's official judge-communication channel. Public issues should not contain sensitive evidence.

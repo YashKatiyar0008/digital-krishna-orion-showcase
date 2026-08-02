@@ -25,16 +25,24 @@ Digital Krishna combines supervised fine-tuning, multilingual interaction, struc
 
 ### Implemented
 
-- [REPLACE_WITH_VERIFIED_IMPLEMENTED_FEATURES]
+- Qwen3 1.7B 4-bit LoRA adapter trained locally and retained privately
+- Deterministic 1,760-conversation dataset split with 1,586 train, 77 validation, and 97 held-out test conversations
+- English, Hindi, and Hinglish guidance experiences
+- Web interface with Krishna and Saathi chat, journaling, breathing, scripture, story, and voice-oriented experiences
+- Server-side safety boundaries and optional verified scripture retrieval
+- A 30-scenario deterministic safety/retrieval test suite (30/30 passing on 18 July 2026; this is not a base-versus-SFT quality score)
 
 ### In progress
 
-- SFT evidence package: [STATUS]
-- Held-out base-versus-SFT evaluation: [STATUS]
+- Redacted screenshots and training-loss evidence for the Qwen3 1.7B run
+- Held-out, blind base-versus-SFT quality evaluation
+- Human review of the 97 held-out Qwen3 test conversations
 
 ### Planned
 
-- [REPLACE_WITH_VERIFIED_ROADMAP_ITEMS]
+- Broader human multilingual evaluation and failure analysis
+- Richer knowledge-graph exploration and mobile design QA
+- Scalable private deployment after safety review
 
 ## High-level architecture
 
@@ -52,38 +60,40 @@ flowchart TD
 
 | Field | Value |
 |---|---|
-| Base model | [REPLACE_WITH_EXACT_MODEL_ID] |
-| Training method | [LoRA / QLoRA / other verified method] |
-| Dataset examples | [REPLACE_WITH_REAL_VALUE] |
-| Train split | [REPLACE_WITH_REAL_VALUE] |
-| Validation split | [REPLACE_WITH_REAL_VALUE] |
-| Test split | [REPLACE_WITH_REAL_VALUE] |
+| Base model | `mlx-community/Qwen3-1.7B-4bit` |
+| Training method | LoRA on a 4-bit MLX base checkpoint |
+| Dataset examples | 1,760 conversations |
+| Train split | 1,586 conversations |
+| Validation split | 77 conversations |
+| Test split | 97 held-out conversations |
 | Languages | English, Hindi, Hinglish |
-| Epochs | [REPLACE_WITH_REAL_VALUE] |
-| Hardware | [REPLACE_WITH_REAL_VALUE] |
-| Final training loss | [REPLACE_WITH_REAL_VALUE] |
-| Final validation loss | [REPLACE_WITH_REAL_VALUE] |
-| Adapter status | [Private / available to judges / not yet completed] |
+| Training schedule | 400 optimization iterations; gradient accumulation 8; seed 42 |
+| Hardware | Apple M4, 10-core CPU, 16 GB unified memory |
+| Final training loss | Not preserved in the reviewed Qwen3 artifacts; must not be claimed |
+| Final validation loss | Not preserved in the reviewed Qwen3 artifacts; must not be claimed |
+| Adapter status | Private; adapter and four checkpoints verified locally |
+
+An earlier proof adapter used `Qwen/Qwen2.5-0.5B-Instruct`, 776 training and 38 validation conversations, one epoch, and a 640-token limit. Its recorded training loss was 1.015 and validation loss was 0.849. Those values apply only to that proof run, not the current Qwen3 adapter.
 
 ## Evaluation summary
 
 | Metric | Base model | Digital Krishna SFT |
 |---|---:|---:|
-| Understanding | [REAL] | [REAL] |
-| Actionability | [REAL] | [REAL] |
-| Cultural relevance | [REAL] | [REAL] |
-| Hindi/Hinglish quality | [REAL] | [REAL] |
-| Instruction following | [REAL] | [REAL] |
-| Safety | [REAL] | [REAL] |
-| Blind preference rate | [REAL] | [REAL] |
+| Understanding | Not yet measured | Not yet measured |
+| Actionability | Not yet measured | Not yet measured |
+| Cultural relevance | Not yet measured | Not yet measured |
+| Hindi/Hinglish quality | Not yet measured | Not yet measured |
+| Instruction following | Not yet measured | Not yet measured |
+| Safety | Not yet measured in blind A/B | Not yet measured in blind A/B |
+| Blind preference rate | Not yet measured | Not yet measured |
 
 > No score should be published until it is produced from a held-out evaluation and verified by the team.
 
 ## Demo links
 
-- Live demo: [ADD_LINK]
-- Demo video: [ADD_LINK]
-- Devpost submission: [ADD_LINK]
+- Live demo: Not yet published in this showcase
+- Demo video: Not yet published in this showcase
+- Devpost submission: Not yet linked
 
 ## Privacy and intellectual property
 
@@ -95,9 +105,9 @@ Authorized judges may request additional evidence as described in [JUDGE_ACCESS.
 
 ## Team
 
-- Team name: [ADD_TEAM_NAME]
-- Members: [ADD_VERIFIED_TEAM_MEMBERS]
-- Contact: [ADD_PUBLIC_CONTACT]
+- Repository owner: [YashKatiyar0008](https://github.com/YashKatiyar0008)
+- Additional team members: not yet listed
+- Public contact: use this repository's GitHub issue tracker for non-sensitive questions
 
 ## License notice
 

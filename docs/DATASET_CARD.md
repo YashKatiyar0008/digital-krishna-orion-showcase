@@ -8,25 +8,25 @@ It is intended to include response-length variation, multi-turn exchanges, clari
 
 ## Creation and review
 
-- Data creation method: [REPLACE_WITH_VERIFIED_METHOD]
-- AI-assisted data disclosure: [REPLACE_WITH_VERIFIED_DISCLOSURE]
-- Human review: [REPLACE_WITH_VERIFIED_PROCESS]
-- Personal-data removal: [REPLACE_WITH_VERIFIED_PROCESS]
-- Duplicate detection: [REPLACE_WITH_VERIFIED_PROCESS]
-- Source verification: [REPLACE_WITH_VERIFIED_PROCESS]
-- Copyright and licensing: [REPLACE_WITH_REVIEWED_TERMS]
+- Data creation method: structured Digital Krishna problem/response records were normalized into Qwen chat conversations.
+- AI-assisted data disclosure: the reviewed artifacts do not preserve a complete authorship ledger; disclosure audit remains pending.
+- Human review: safety-oriented records and representative outputs were reviewed during development; a complete row-level review is not claimed.
+- Personal-data removal: public samples are synthetic and sanitized; complete private-corpus privacy audit remains pending.
+- Duplicate detection: deterministic IDs and split assignment are implemented; semantic near-duplicate audit remains pending.
+- Source verification: exact scripture claims require the separate verified-retrieval layer; SFT output alone is not treated as a source.
+- Copyright and licensing: under review; the complete dataset is not distributed.
 
 ## Statistics
 
 | Statistic | Value |
 |---|---:|
-| Total examples | [REAL_VALUE_REQUIRED] |
-| English | [REAL_VALUE_REQUIRED] |
-| Hindi | [REAL_VALUE_REQUIRED] |
-| Hinglish | [REAL_VALUE_REQUIRED] |
-| Multi-turn examples | [REAL_VALUE_REQUIRED] |
-| Safety-boundary examples | [REAL_VALUE_REQUIRED] |
-| Train/validation/test | [REAL_VALUE_REQUIRED] |
+| Total examples | 1,760 |
+| English | Present; exact audited count pending |
+| Hindi | Present; exact audited count pending |
+| Hinglish | Present; exact audited count pending |
+| Multi-turn examples | Exact audited count pending |
+| Safety-boundary examples | Present; exact audited count pending |
+| Train/validation/test | 1,586 / 77 / 97 |
 
 ## Known limitations
 

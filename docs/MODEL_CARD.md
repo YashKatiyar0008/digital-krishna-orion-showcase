@@ -3,11 +3,11 @@
 | Field | Value |
 |---|---|
 | Project | Digital Krishna |
-| Base model | [REPLACE_WITH_EXACT_MODEL_ID] |
-| Adapter method | [REPLACE_WITH_VERIFIED_METHOD] |
-| Version | [REPLACE_WITH_PUBLIC_VERSION] |
+| Base model | `mlx-community/Qwen3-1.7B-4bit` |
+| Adapter method | MLX LoRA, rank 8 over 8 layers |
+| Version | `digital-krishna-qwen3-1.7b-lora` |
 | Languages | English, Hindi, Hinglish |
-| Completion status | [REPLACE_WITH_VERIFIED_STATUS] |
+| Completion status | Adapter trained; blind quality and human safety evaluation still in progress |
 
 ## Intended uses
 
@@ -19,11 +19,11 @@ Medical diagnosis or treatment, emergency response, therapy replacement, legal o
 
 ## Training summary
 
-[ADD_VERIFIED_TRAINING_SUMMARY]
+The primary adapter was trained for 400 optimization iterations on 1,586 conversations, with 77 validation and 97 held-out test conversations. Configuration: learning rate 0.00001, maximum sequence length 1,024, batch size 1, gradient accumulation 8, and seed 42. Training ran locally on an Apple M4 MacBook Air with 16 GB unified memory. Final Qwen3 loss values were not found in the retained reviewed artifacts and are not claimed.
 
 ## Evaluation summary
 
-[ADD_VERIFIED_HELD_OUT_RESULTS]
+Blind base-versus-SFT scoring has not yet been completed. A separate deterministic safety/retrieval suite passed 30 of 30 scenarios on 18 July 2026, covering English, Hindi, Hinglish, prompt injection, fabricated-verse handling, high-risk boundaries, and empty-input validation. That result validates the tested pipeline behavior, not general model quality.
 
 ## Safety boundaries
 
@@ -35,8 +35,8 @@ Possible hallucination, multilingual quality variation, cultural overgeneralizat
 
 ## Licensing status
 
-[ADD_REVIEWED_BASE_MODEL_AND_ADAPTER_LICENSE_STATUS]
+The base checkpoint remains subject to its upstream license. Public adapter licensing has not been finalized; weights are not distributed here.
 
 ## Model-access policy
 
-The adapter is [Private / available to authorized judges / not yet completed]. No weights are included here.
+The adapter is private. Proof of existence and a controlled loading demonstration may be provided to authorized judges. No weights are included here.
