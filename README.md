@@ -1,4 +1,4 @@
-# 🪷 Digital Krishna
+# 🪷 krishnaarth
 
 ### An immersive AI + 3D experience for reflection, guidance, and mindful interaction
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 🌟 What is Digital Krishna?
+## 🌟 What is krishnaarth?
 
 **Digital Krishna** is an immersive digital experience that combines:
 
