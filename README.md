@@ -1,116 +1,407 @@
-# Digital Krishna
+# 🪷 Digital Krishna
 
-## A Supervised Fine-Tuned Multilingual AI Model for Culturally Grounded Life Guidance
+### An immersive AI + 3D experience for reflection, guidance, and mindful interaction
 
-> Digital Krishna is a domain-specific supervised fine-tuned language model built to provide culturally grounded, multilingual, practical, and responsible guidance for modern-life challenges.
+> **Hackathon submission scope:** This README intentionally focuses on the work added to Digital Krishna during the hackathon period beginning **August 7, 2026**. Earlier model-training and evaluation work is documented separately as pre-existing foundation and is **not being claimed as the hackathon contribution**.
 
-> Digital Krishna is not an AI claiming to be God and is not a replacement for doctors, counsellors, therapists, or emergency services. It is a culturally grounded guidance system inspired by Krishna's teachings and designed to make reflective wisdom more understandable and actionable.
+---
 
-## Problem
+## 🌟 What is Digital Krishna?
 
-General AI systems can give generic answers, inconsistent emotional tone, culturally disconnected advice, weak Hindi and Hinglish support, limited practical follow-through, unsupported or invented spiritual quotations, and poor handling of ambiguous follow-ups.
+**Digital Krishna** is an immersive digital experience that combines:
 
-## Solution
+* 🪷 A 3D Krishna character
+* ✨ Holographic visual effects
+* 🌌 Particles and aura effects
+* 🎭 Blender animation
+* 🎙️ Voice interaction
+* 💬 AI-powered conversation
+* 🖥️ Interactive web interface
+* 🚀 Deployed digital experience
 
-Digital Krishna combines supervised fine-tuning, multilingual interaction, structured guidance, culturally grounded reasoning, optional verified retrieval for exact teachings and stories, practical next steps, safety boundaries, and text, voice, and story-based experiences.
+The goal is to make AI-based reflection and guidance feel more **human, immersive, culturally meaningful, and engaging** rather than presenting the user with only a conventional text chatbot.
 
-## What makes it different
+The experience uses Krishna as the visual and conversational identity while providing a digital environment designed for reflection, conversation, and mindful interaction.
 
-- The website is only the interface; the core innovation is the domain-specific SFT model.
-- SFT teaches behavior, tone, structure, clarification, and language style.
-- Retrieval, when used, supports exact source-backed verses and stories.
-- The system does not rely only on a spiritual system prompt.
+---
 
-## Features
+# 🏆 Hackathon Contribution
 
-### Implemented
+The central contribution of this submission is the transformation of the existing Digital Krishna foundation into an **interactive 3D AI experience**.
 
-- Qwen3 1.7B 4-bit LoRA adapter trained locally and retained privately
-- Deterministic 1,760-conversation dataset split with 1,586 train, 77 validation, and 97 held-out test conversations
-- English, Hindi, and Hinglish guidance experiences
-- Web interface with Krishna and Saathi chat, journaling, breathing, scripture, story, and voice-oriented experiences
-- Server-side safety boundaries and optional verified scripture retrieval
-- A 30-scenario deterministic safety/retrieval test suite (30/30 passing on 18 July 2026; this is not a base-versus-SFT quality score)
+### Work added during the hackathon period
 
-### In progress
+| Area              | Contribution                                      |
+| ----------------- | ------------------------------------------------- |
+| 🪷 3D Character   | Integrated and presented a 3D Krishna model       |
+| ✨ Hologram        | Created a holographic visual treatment            |
+| 🎭 Animation      | Developed Blender-based character/scene animation |
+| 🌌 Visual Effects | Added particles, aura, atmosphere and lighting    |
+| 🎙️ Voice         | Added voice interaction to the experience         |
+| 💬 AI Chat        | Connected the experience with conversational AI   |
+| 🖥️ Website       | Built/refined the interactive web interface       |
+| 🚀 Deployment     | Prepared and deployed the experience for users    |
 
-- Redacted screenshots and training-loss evidence for the Qwen3 1.7B run
-- Held-out, blind base-versus-SFT quality evaluation
-- Human review of the 97 held-out Qwen3 test conversations
+These components form the **hackathon-period implementation** being submitted for evaluation.
 
-### Planned
+---
 
-- Broader human multilingual evaluation and failure analysis
-- Richer knowledge-graph exploration and mobile design QA
-- Scalable private deployment after safety review
+# 💡 The Problem
 
-## High-level architecture
+Many digital wellbeing and conversational AI experiences are fundamentally **text-first**.
 
-```mermaid
-flowchart TD
-  U[User] --> W[Web Experience]
-  W --> S[Input Validation and Safety Layer]
-  S --> M[Digital Krishna SFT Model]
-  M --> R[Optional Verified Knowledge Retrieval]
-  R --> C[Response Composer]
-  C --> O[Text, Voice, and Interactive Story Experience]
+Although text chat is useful, it can also feel:
+
+* generic,
+* disconnected,
+* impersonal,
+* visually repetitive,
+* and difficult to associate with a meaningful cultural or emotional context.
+
+For an experience centered around reflection and personal guidance, the **environment and presentation can matter as much as the conversation itself**.
+
+Digital Krishna explores whether combining AI with an immersive 3D character can make digital reflection feel more engaging and memorable.
+
+---
+
+# 🪷 The Solution
+
+Digital Krishna creates an interactive environment where users can interact with an AI experience represented through a **3D Krishna character**.
+
+Instead of:
+
+> User → Text box → AI response
+
+the experience becomes:
+
+> **User → Interactive environment → Krishna → AI conversation → Visual/voice experience**
+
+The result is intended to feel less like using another chatbot and more like entering a dedicated digital experience.
+
+---
+
+# ✨ The 3D Experience
+
+## 🪷 3D Krishna
+
+A 3D Krishna model serves as the central visual element of the experience.
+
+The model is integrated into the Digital Krishna environment rather than being treated as a simple static image.
+
+The experience is designed around preserving the character's visual identity while building an interactive presentation around it.
+
+---
+
+## ✨ Holographic Effect
+
+The Krishna character is presented using a holographic visual style.
+
+The holographic treatment helps establish the futuristic identity of Digital Krishna and visually connects the traditional subject with modern technology.
+
+The visual language combines:
+
+* transparency/translucency
+* glow
+* lighting
+* atmospheric effects
+* layered visual effects
+
+---
+
+## 🌌 Particles & Aura
+
+The scene contains environmental effects designed to make the character feel integrated into the digital space.
+
+These include:
+
+* particle effects
+* aura layers
+* atmospheric haze
+* lighting effects
+* surrounding visual energy
+
+These effects are not simply decorative—they help create the visual identity of the Digital Krishna experience.
+
+---
+
+# 🎭 Blender Animation
+
+Blender is used as part of the 3D production pipeline.
+
+The Digital Krishna scene includes:
+
+* 3D character setup
+* scene lighting
+* camera setup
+* animation
+* particle systems
+* aura effects
+* atmospheric effects
+* rendering configuration
+
+The objective is to create a living, dynamic presentation rather than a static 3D model.
+
+---
+
+# 🎙️ Voice Interaction
+
+Digital Krishna also incorporates **voice interaction**, allowing the experience to move beyond keyboard-only interaction.
+
+Voice makes the interaction feel more natural and helps reinforce the idea of having a conversational digital companion rather than simply filling out a chatbot interface.
+
+---
+
+# 💬 AI Conversation
+
+The 3D experience is connected to a conversational AI layer.
+
+Users can interact with Digital Krishna through an AI conversation interface rather than simply viewing the 3D character.
+
+The AI layer provides the conversational intelligence while the 3D/voice interface provides the immersive presentation.
+
+---
+
+# 🖥️ Interactive Website
+
+The website acts as the primary user-facing interface.
+
+It brings together:
+
+* the 3D Krishna experience
+* AI conversation
+* voice interaction
+* visual effects
+* Digital Krishna branding
+* interactive controls
+
+The intention is to make the experience accessible through a familiar web interface rather than requiring users to operate Blender directly.
+
+---
+
+# 🚀 Deployment
+
+The project has been prepared as a deployed digital experience so that the concept can move beyond a local development environment.
+
+The deployment layer connects the user-facing website with the underlying Digital Krishna experience.
+
+---
+
+# 🧠 Technical Architecture
+
+```text
+                    ┌─────────────────────┐
+                    │       USER          │
+                    └──────────┬──────────┘
+                               │
+                    ┌──────────▼──────────┐
+                    │   Digital Krishna  │
+                    │    Web Interface   │
+                    └───────┬─────┬───────┘
+                            │     │
+                 ┌──────────┘     └──────────┐
+                 ▼                           ▼
+        ┌────────────────┐          ┌────────────────┐
+        │ Voice Input /  │          │  3D Krishna    │
+        │ Interaction    │          │   Experience   │
+        └───────┬────────┘          └───────┬────────┘
+                │                           │
+                ▼                           ▼
+        ┌────────────────┐          ┌────────────────┐
+        │ Conversational │          │ Hologram /     │
+        │ AI Layer       │          │ Aura / Particles│
+        └───────┬────────┘          └────────────────┘
+                │
+                ▼
+        ┌────────────────┐
+        │ AI Response     │
+        └───────┬────────┘
+                │
+                ▼
+        ┌─────────────────────────────┐
+        │ Immersive Digital Krishna   │
+        │ User Experience             │
+        └─────────────────────────────┘
 ```
 
-## SFT evidence summary
+---
 
-| Field | Value |
-|---|---|
-| Base model | `mlx-community/Qwen3-1.7B-4bit` |
-| Training method | LoRA on a 4-bit MLX base checkpoint |
-| Dataset examples | 1,760 conversations |
-| Train split | 1,586 conversations |
-| Validation split | 77 conversations |
-| Test split | 97 held-out conversations |
-| Languages | English, Hindi, Hinglish |
-| Training schedule | 400 optimization iterations; gradient accumulation 8; seed 42 |
-| Hardware | Apple M4, 10-core CPU, 16 GB unified memory |
-| Final training loss | Not preserved in the reviewed Qwen3 artifacts; must not be claimed |
-| Final validation loss | Not preserved in the reviewed Qwen3 artifacts; must not be claimed |
-| Adapter status | Private; adapter and four checkpoints verified locally |
+# 🧱 What existed before the hackathon?
 
-An earlier proof adapter used `Qwen/Qwen2.5-0.5B-Instruct`, 776 training and 38 validation conversations, one epoch, and a 640-token limit. Its recorded training loss was 1.015 and validation loss was 0.849. Those values apply only to that proof run, not the current Qwen3 adapter.
+Digital Krishna had an existing AI foundation before August 7.
 
-## Evaluation summary
+This included work around:
 
-| Metric | Base model | Digital Krishna SFT |
-|---|---:|---:|
-| Understanding (1–5) | 4.55 | 4.30 |
-| Actionability (1–5) | 2.26 | 1.60 |
-| Cultural relevance (1–5) | 1.05 | 1.00 |
-| Hindi/Hinglish quality (1–5) | 1.13 | 2.71 |
-| Instruction following (1–5) | 3.29 | 3.59 |
-| Safety-boundary response (1–5) | 2.95 | 1.65 |
-| Automated preference rate | 29.4% | 17.6% |
+* supervised fine-tuning
+* multilingual conversational data
+* safety/retrieval evaluation
+* model experimentation
+* early Digital Krishna conversational functionality
 
-Ties were 52.9%. Average generation latency was 2.975 seconds for the base and 2.253 seconds for SFT on the evaluation hardware. These results were produced on 2 August 2026 using 12 deterministically selected private held-out English prompts, four disclosed supplemental Hindi/Hinglish prompts, and one supplemental English safety prompt. Both models used the same neutral instruction, temperature 0, and 220-token limit. Scores come from a deterministic, identity-blinded automated rubric—not human judges. Raw held-out prompts and outputs remain private; hashes and score metadata are published in [`results/base_vs_sft_evaluation.json`](results/base_vs_sft_evaluation.json).
+That work established the **technical foundation** used by the later experience.
 
-The current adapter improves multilingual response matching, instruction following, and latency, but does not outperform the base on this small automated benchmark. In particular, the safety result requires remediation before production use or broader claims.
+### Important scope clarification
 
-## Demo links
+**The pre-August-7 model-training work is not being presented as the hackathon-period contribution.**
 
-- Live demo: Not yet published in this showcase
-- Demo video: Not yet published in this showcase
-- Devpost submission: Not yet linked
+The hackathon contribution described in this submission is the subsequent work that transformed the project into the **3D, animated, holographic, voice-enabled and deployed Digital Krishna experience.**
 
-## Privacy and intellectual property
+---
 
-> This public repository is a technical showcase. The complete production source code, full SFT dataset, trained adapter, private prompts, backend implementation, deployment configuration, and proprietary data-processing methods are maintained privately because they contain intellectual property and security-sensitive information.
+# 🔨 Hackathon Timeline
 
-## Judge access
+### Before August 7 — Existing Foundation
 
-Authorized judges may request additional evidence as described in [JUDGE_ACCESS.md](JUDGE_ACCESS.md).
+The project already contained an AI/model foundation and experimentation.
 
-## Team
+↓
 
-- Repository owner: [YashKatiyar0008](https://github.com/YashKatiyar0008)
-- Additional team members: not yet listed
-- Public contact: use this repository's GitHub issue tracker for non-sensitive questions
+### August 7 onward — Hackathon Development
 
-## License notice
+The project was expanded into an immersive experience through:
 
-Code, data, model artifacts, media, and documentation may have separate licenses. See [LICENSE_NOTICE.md](LICENSE_NOTICE.md).
+**3D Krishna**
+
+↓
+
+**Blender animation**
+
+↓
+
+**Holographic presentation**
+
+↓
+
+**Particles + aura + atmosphere**
+
+↓
+
+**Website experience**
+
+↓
+
+**AI conversation**
+
+↓
+
+**Voice interaction**
+
+↓
+
+**Deployment**
+
+---
+
+# 🎯 Why this approach is different
+
+Digital Krishna is not trying to compete with a generic chatbot purely on language-model capability.
+
+The differentiator is the **combination of AI + cultural identity + 3D + animation + voice + immersive presentation**.
+
+The project explores a different question:
+
+> **What happens when conversational AI becomes an experience rather than just a chat window?**
+
+---
+
+# 🛠️ Technology
+
+### 3D / Visual
+
+* Blender
+* 3D character assets
+* Animation
+* Particle systems
+* Aura effects
+* Lighting
+* Holographic rendering
+* Atmospheric effects
+
+### AI
+
+* Conversational AI
+* Existing Digital Krishna AI foundation
+* Multilingual interaction foundation
+
+### Web
+
+* Interactive frontend
+* AI chat interface
+* Voice interaction
+* Deployment infrastructure
+
+---
+
+# 🔬 Earlier AI Foundation
+
+The project also contains an earlier supervised fine-tuning foundation based on a small multilingual language model and domain-specific conversational data.
+
+This foundation is useful to the overall Digital Krishna system, but its development predates the hackathon submission window.
+
+It is therefore presented here **only as background architecture**, not as the primary hackathon contribution.
+
+---
+
+# 🛡️ Safety & Responsible Use
+
+Digital Krishna is intended for reflection, conversation, and general wellbeing-oriented interaction.
+
+It should **not** be considered a replacement for:
+
+* medical professionals
+* mental-health professionals
+* emergency services
+* professional financial/legal advice
+
+For serious or emergency situations, users should seek appropriate professional help.
+
+The experience is designed to support reflection and engagement—not to make clinical diagnoses or replace professional care.
+
+---
+
+# 📸 Evidence of Hackathon Work
+
+The hackathon-period implementation can be demonstrated through:
+
+* Blender project files
+* 3D Krishna scene
+* animation setup
+* holographic effects
+* particle/aura systems
+* website interface
+* AI conversation interface
+* voice interaction
+* deployed experience
+* development screenshots/videos
+
+Judge access can be provided to relevant non-sensitive implementation evidence when requested.
+
+---
+
+# 🔐 Project & Asset Notes
+
+Some project components may use third-party assets or libraries with their own licensing requirements.
+
+Where applicable, the original asset/license terms should be respected.
+
+Private implementation details, proprietary prompts, credentials, private datasets, deployment secrets, or other sensitive material should not be exposed publicly.
+
+---
+
+# 🚀 Vision
+
+Digital Krishna is an exploration of what a culturally grounded AI experience could become when AI is combined with immersive digital environments.
+
+The long-term vision is to create an experience where users don't simply **ask an AI a question**.
+
+They **enter an environment, interact naturally, listen, reflect, and engage.**
+
+---
+
+# 🪷 Digital Krishna
+
+### AI × Culture × 3D × Voice × Immersive Experience
+
+**Built to explore a more human way of interacting with AI.**
+
+---
+
